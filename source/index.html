@@ -10,6 +10,22 @@
         <img src="img/logo.svg" alt="Логотип Погнали" width="74" height="23">
       </a>
       <button class="page-header__menu-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a>Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="">Фотография</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="page-main">
@@ -20,13 +36,19 @@
         <a class="download__link" href="https://www.apple.com/app-store/">Скачать приложение</a>
         <ul class="platform-icons">
           <li class="platform-icons__item">
-            <img class="platform-icons__image" src="img/apple-logo.svg" alt="логотип apple" width="47" height="56">
+            <a href="https://www.apple.com/app-store/" aria-label="перейти в AppStore">
+              <img class="platform-icons__image" src="img/apple-logo.svg" alt="логотип apple" width="47" height="56">
+            </a>
           </li>
           <li class="platform-icons__item">
-            <img class="platform-icons__image" src="img/android-logo.svg" alt="логотип android" width="43" height="47">
+            <a href="https://play.google.com/store/apps?hl=ru" aria-label="перейти в Play Маркет">
+              <img class="platform-icons__image" src="img/android-logo.svg" alt="логотип android" width="43" height="47">
+            </a>
           </li>
           <li class="platform-icons__item">
-            <img class="platform-icons__image" src="img/microsoft-logo.svg" alt="логотип microsoft" width="44" height="41">
+            <a href="https://www.microsoft.com/ru-ru/store/apps/" aria-label="перейти в Microsoft Store">
+              <img class="platform-icons__image" src="img/microsoft-logo.svg" alt="логотип microsoft" width="44" height="41">
+            </a>
           </li>
         </ul>
         <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -50,97 +72,108 @@
             <p class="features-list__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img class="features__footer-image" src="iphone.png" alt="телефон с сообщениями" width="157" height="320">
+        <img class="features__footer-image" src="img/iphone-screen-3.png" alt="мусорный контейнер и смалийк" width="136" height="245">
       </section>
 
       <section class="reviews slider">
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="reviews-list">
           <blockquote class="reviews-list__item slider__item">
-                  <cite class="reviews__author-name">Николай Петров</cite>
-                  <p class="reviews-list__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              </blockquote>
-              <blockquote class="reviews-list__item slider__item">
-                  <cite class="reviews-list__author-name">Пётр Николаев</cite>
-                  <p class="reviews-list__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              </blockquote>
-              <blockquote class="reviews-list__item slider__item">
-                  <cite class="reviews-list__author-name">Николай Петров Иванович</cite>
-                  <p class="reviews-list__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              </blockquote>
+            <cite class="reviews__author-name">Николай Петров</cite>
+            <p class="reviews-list__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+          <blockquote class="reviews-list__item slider__item">
+            <cite class="reviews-list__author-name">Пётр Николаев</cite>
+            <p class="reviews-list__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+          <blockquote class="reviews-list__item slider__item">
+            <cite class="reviews-list__author-name">Николай Петров Иванович</cite>
+            <p class="reviews-list__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
         </div>
         <div class="reviews__toggles slider__toggles">
-              <button class="slider__toggle slider__toggle--current" type="button"><span class="visually-hidden">1</span></button>
-              <button class="slider__toggle" type="button"><span class="visually-hidden">2</span></button>
-              <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
-          </div>
+          <button class="slider__toggle slider__toggle--current" type="button"><span class="visually-hidden">1</span></button>
+          <button class="slider__toggle" type="button"><span class="visually-hidden">2</span></button>
+          <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
+        </div>
       </section>
 
-      <section class="price">
+      <section class="price slider">
         <h2 class="visually-hidden">Цены</h2>
-        <div class="price__item">
-          <div class="price__header">
-            <h3 class="price__title">База</h3>
-            <p class="price__price-value">1,99 USD</p>
-          </div>
-          <div class="prcie__footer">
-            <p class="prcie__features">Розовый фильтр</p>
-            <p class="prcie__features">Смайлики</p>
-            <p class="prcie__features">Комментарии</p>
-          </div>
-        </div>
-        <div>
-          <div class="price__header">
-            <h3 class="price__title">Стандарт</h3>
-            <p class="price__price-value">3,99 USD</p>
-          </div>
-          <div class="prcie__footer">
-            <p class="prcie__features">Розовый фильтр</p>
-            <p class="prcie__features">Смайлики</p>
-            <p class="prcie__features">Комментарии</p>
-          </div>
-        </div>
-        <div>
-          <div class="price__header">
-            <h3 class="price__title">АНЛИМ</h3>
-            <p class="price__price-value">9,99 USD</p>
-          </div>
-          <div class="prcie__footer">
-            <p class="prcie__features">Розовый фильтр</p>
-            <p class="prcie__features">Смайлики</p>
-            <p class="prcie__features">Комментарии</p>
-          </div>
-        </div>
+
+        <table class="price__table">
+          <!--
+            Для мобильной версии я буду скрывать первый столбец, а в ячейках выводить с помощью css надпись из атрибута data-title
+            content: attr(data-title)
+            по умолчанию будет выводится галочка в ячейке
+            если price__features not-available , то будет крестик
+            я решил, что крестик и галочка - это не контетное изображение, а оформительское
+          -->
+          <tr>
+            <th></th>
+            <th>
+              <p class="price__title">База</p>
+              <p class="price__price-value">1,99 USD</p>
+            </th>
+            <th>
+              <p class="price__title">Стандарт</p>
+              <p class="price__price-value">3,99 USD</p>
+            </th>
+            <th>
+              <p class="price__title">Анлим</p>
+              <p class="price__price-value">9,99 USD</p>
+            </th>
+          </tr>
+          <tr>
+            <td class="price__title">Розовый фильтр</td>
+            <td data-title="Розовый фильтр" aria-label="Розовый фильтр доступен"></td>
+            <td data-title="Смайлики" aria-label="Смайлики доступны"></td>
+            <td data-title="Комментарии" aria-label="Комментарии доступны"></td>
+          </tr>
+          <tr>
+            <td class="price__title">Смайлики</td>
+            <td class="price__features--not-available" data-title="Розовый фильтр" aria-label="Розовый фильтр не доступен">x</td>
+            <td data-title="Смайлики" aria-label="Смайлики доступны"></td>
+            <td data-title="Комментарии" aria-label="Комментарии доступны"></td>
+          </tr>
+          <tr>
+            <td class="price__title">Комментарии</td>
+            <td class="price__features--not-available" data-title="Розовый фильтр" aria-label="Розовый фильтр не доступен">x</td>
+            <td class="price__features--not-available" data-title="Смайлики" aria-label="Смайлики не доступны">x</td>
+            <td data-title="Комментарии" aria-label="Комментарии доступны"></td>
+          </tr>
+        </table>
+
         <div class="price__toggles slider__toggles">
-              <button class="slider__toggle" type="button"><span class="visually-hidden">1</span></button>
-              <button class="slider__toggle slider__toggle--current" type="button"><span class="visually-hidden">2</span></button>
-              <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
-          </div>
+          <button class="slider__toggle" type="button"><span class="visually-hidden">1</span></button>
+          <button class="slider__toggle slider__toggle--current" type="button"><span class="visually-hidden">2</span></button>
+          <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
+        </div>
       </section>
 
       <section class="contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
-        <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
-        <div class="contacts-item">
-          <span class="contacts-item__title">Звоните:</span>
-          <a class="contacts-item__text" href="tel:+78125556666">тел: +7 (812) 555-66-66</a>
+        <p class="contacts__header">Остались вопросы? Свяжитесь с нами!</p>
+        <div class="contacts__item">
+          <span class="contacts__title">Звоните:</span>
+          <a class="contacts__text" href="tel:+78125556666">тел: +7 (812) 555-66-66</a>
         </div>
-        <div class="contacts-item">
-          <span class="contacts-item__title">Пишите:</span>
-          <a class="contacts-item__text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <div class="contacts__item">
+          <span class="contacts__title">Пишите:</span>
+          <a class="contacts__text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </div>
-        <div class="contacts-item">
-          <span class="contacts-item__title">Приезжайте в гости:</span>
-          <p class="contacts-item__text">ул. Большая Конюшенная, 19/8</p>
+        <div class="contacts__item">
+          <span class="contacts__title">Приезжайте в гости:</span>
+          <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
         </div>
-        <img class="contacts__map" src="img/map.jpg" alt="схема проезда" width="320" height="200">
+        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1333.9096290448022!2d30.322768113159658!3d59.93867628969298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1618063917027!5m2!1sru!2sru" width="320" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </section>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__logo">
-        <img class="contacts__map" src="logo-glasses.svg" alt="очки" width="59" height="40">
-        <img class="contacts__map" src="logo-black.svg" alt="чёрная надпись PINK" width="74" height="23">
+        <img class="page-footer__logo-glasses" src="logo-glasses.svg" alt="очки" width="59" height="40">
+        <img class="page-footer__logo" src="logo-black.svg" alt="чёрная надпись PINK" width="74" height="23">
       </div>
       <ul class="page-footer__social">
         <li>
@@ -161,7 +194,7 @@
       </ul>
       <div class="page-footer__developer">
         <span>Разработано</span>
-        <a class="link-developer" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="переход на сайт разработчика сайта HTML Academy">
+        <a class="link-developer" href="https://htmlacademy.ru/intensive/adaptive" aria-label="переход на сайт разработчика сайта HTML Academy">
           <img src="img/htmlacademy-icon.svg" width="27" height="34" alt="логотип HTML Academy">
         </a>
       </div>
