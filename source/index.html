@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-    <header class="page-header">
+  <body class="page__body">
+    <header class="page-header wrapper">
       <a class="page-header__logo" aria-label="Логотип Погнали">
         <img src="img/logo.svg" alt="Логотип Погнали" width="74" height="23">
       </a>
@@ -28,13 +29,13 @@
       </nav>
     </header>
 
-    <main class="page-main">
+    <main class="page-main page-main--padding">
       <h1 class="visually-hidden">Приложение PINK</h1>
       <section class="download">
-        <h2>Взгляните на жизнь иначе!</h2>
+        <h2 class="h2--padding wrapper">Взгляните на жизнь иначе!</h2>
         <img class="download__hand-phone" src="img/phone.png" alt="рука держит телефон" width="320" height="286">
-        <a class="download__link" href="https://www.apple.com/app-store/">Скачать приложение</a>
-        <ul class="platform-icons">
+        <a class="download__link wrapper" href="https://www.apple.com/app-store/">Скачать приложение</a>
+        <ul class="platform-icons wrapper">
           <li class="platform-icons__item">
             <a href="https://www.apple.com/app-store/" aria-label="перейти в AppStore">
               <img class="platform-icons__image" src="img/apple-logo.svg" alt="логотип apple" width="47" height="56">
@@ -51,10 +52,10 @@
             </a>
           </li>
         </ul>
-        <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <p class="download__description wrapper">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
 
-      <section class="features">
+      <section class="features wrapper">
         <h2 class="visually-hidden">Особенности приложения</h2>
         <p class="features__title">Устали от серости мегаполиса?</p>
         <p class="features__title">Нам есть, что вам предложить!</p>
@@ -72,14 +73,16 @@
             <p class="features-list__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img class="features__footer-image" src="img/iphone-screen-3.png" alt="мусорный контейнер и смалийк" width="136" height="245">
+        <div class="features__footer-image">
+          <img src="img/iphone-screen-3.png" alt="мусорный контейнер и смалийк" width="136" height="245">
+        </div>
       </section>
 
       <section class="reviews slider">
         <h2 class="visually-hidden">Отзывы</h2>
-        <div class="reviews-list">
+        <div class="reviews-list wrapper">
           <blockquote class="reviews-list__item slider__item">
-            <cite class="reviews__author-name">Николай Петров</cite>
+            <cite class="reviews-list__author-name">Николай Петров</cite>
             <p class="reviews-list__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
           <blockquote class="reviews-list__item slider__item">
@@ -153,8 +156,8 @@
 
       <section class="contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
-        <p class="contacts__header">Остались вопросы? Свяжитесь с нами!</p>
-        <ul>
+        <p class="contacts__header wrapper">Остались вопросы? Свяжитесь с нами!</p>
+        <ul class="contacts__list wrapper">
           <li class="contacts__item">
             <p class="contacts__title">Звоните:</p>
             <a class="contacts__text" href="tel:+78125556666">тел: +7 (812) 555-66-66</a>
