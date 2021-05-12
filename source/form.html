@@ -7,11 +7,13 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" aria-label="Логотип Погнали">
-        <img src="img/logo.svg" alt="Логотип Погнали" width="74" height="23">
-      </a>
-      <button class="page-header__menu-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <nav class="main-nav">
+      <div class="page-header__topline wrapper">
+        <a class="page-header__logo" aria-label="Логотип Погнали">
+          <img src="img/logo.svg" alt="Логотип Погнали" width="74" height="23">
+        </a>
+        <button class="page-header__menu-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </div>
+      <nav class="main-nav" data-viewstatus="no">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a href="index.html">Главная</a>
@@ -30,90 +32,155 @@
     </header>
 
     <main class="page-main">
-      <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <section class="page-main__header">
+        <h1 class="page-main__h1">Конкурс на самое безбашенное путешествие с Пинк</h1>
 
-      <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <p class="page-main__intro-text wrapper">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+      </section>
 
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <fieldset>
+      <form class="form-contest" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form-contest__fieldset wrapper">
           <legend class="visually-hidden">ФИО</legend>
-          <label for="lastName">Фамилия:</label>
-          <input type="text" name="lastName" id="lastName" placeholder="Укажите фамилию *" required="required">
-          <label for="firstName">Имя:</label>
-          <input type="text" name="firstName" id="firstName" placeholder="Введите ваше имя *" required="required">
-          <label for="middleName">Отчество:</label>
-          <input type="text" name="middleName" id="middleName" placeholder="Ну и отчество тоже">
+          <label class="form-contest__label" for="lastName">Фамилия:</label>
+          <input class="form-contest__input-text" type="text" name="lastName" id="lastName" placeholder="Укажите фамилию *" required="required">
+          <label class="form-contest__label" for="firstName">Имя:</label>
+          <input class="form-contest__input-text" type="text" name="firstName" id="firstName" placeholder="Введите ваше имя *" required="required">
+          <label class="form-contest__label" for="middleName">Отчество:</label>
+          <input class="form-contest__input-text" type="text" name="middleName" id="middleName" placeholder="Ну и отчество тоже">
         </fieldset>
-        <fieldset>
-          <legend>Ваши безбашенные достижения в путешествии</legend>
-          <label for="answer1"><input type="checkbox" name="answer1" id="answer1" value="Сделал селфи с акулой" checked>Сделал селфи с акулой</label>
-          <label for="answer2"><input type="checkbox" name="answer2" id="answer2" value="Обгорел на пляже" checked>Обгорел на пляже</label>
-          <label for="answer3"><input type="checkbox" name="answer3" id="answer3" value="Видел Чака Норриса">Видел Чака Норриса</label>
-          <label for="answer4"><input type="checkbox" name="answer4" id="answer4" value="Накупил сувениров">Накупил сувениров</label>
-          <label for="answer5"><input type="checkbox" name="answer5" id="answer5" value="Удержал башню" checked>Удержал башню</label>
-          <label for="answer6"><input type="checkbox" name="answer6" id="answer6" value="Разгромил отель">Разгромил отель</label>
+
+        <fieldset class="form-contest__fieldset form-contest__fieldset--bg">
+          <legend class="form-contest__check-title">
+            Ваши безбашенные достижения в путешествии
+          </legend>
+          <ul class="form-contest__checklist wrapper">
+            <li>
+              <input class="visually-hidden form-contest__check" type="checkbox" name="answer1" id="answer1" value="Сделал селфи с акулой" checked>
+              <label class="form-contest__check-label" for="answer1">
+                Сделал селфи с акулой
+              </label>
+            </li>
+            <li>
+              <input class="visually-hidden form-contest__check" type="checkbox" name="answer2" id="answer2" value="Обгорел на пляже" checked>
+              <label class="form-contest__check-label" for="answer2">
+                Обгорел на пляже
+              </label>
+            </li>
+            <li>
+              <input class="visually-hidden form-contest__check" type="checkbox" name="answer3" id="answer3" value="Видел Чака Норриса">
+              <label class="form-contest__check-label" for="answer3">
+                Видел Чака Норриса
+              </label>
+            </li>
+            <li>
+              <input class="visually-hidden form-contest__check" type="checkbox" name="answer4" id="answer4" value="Накупил сувениров">
+              <label class="form-contest__check-label" for="answer4">
+                Накупил сувениров
+              </label>
+            </li>
+            <li>
+              <input class="visually-hidden form-contest__check" type="checkbox" name="answer5" id="answer5" value="Удержал башню" checked>
+              <label class="form-contest__check-label" for="answer5">
+                Удержал башню
+              </label>
+            </li>
+            <li>
+              <input class="visually-hidden form-contest__check" type="checkbox" name="answer6" id="answer6" value="Разгромил отель">
+              <label class="form-contest__check-label" for="answer6">
+                Разгромил отель
+              </label>
+            </li>
+          </ul>
         </fieldset>
-        <fieldset>
+
+        <fieldset class="form-contest__fieldset">
           <legend class="visually-hidden">Контактная информация</legend>
-          <label for="phone">Номер телефона</label>
-          <input type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
-          <label for="email">Адрес почты</label>
-          <input type="email" name="email" id="email" placeholder="Введите почту *" required="required">
+          <label class="form-contest__label" for="phone">Номер телефона</label>
+          <input class="form-contest__input-text" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
+          <label class="form-contest__label" for="email">Адрес почты</label>
+          <input class="form-contest__input-text" type="email" name="email" id="email" placeholder="Введите почту *" required="required">
         </fieldset>
-        <fieldset>
-          <legend>С каким приложением путешествовали?</legend>
-          <label><input type="radio" name="appsIOS" value="Pink для iOS" checked>Pink для iOS</label>
-          <label><input type="radio" name="appsAndroid" value="Pink на Android">Pink на Android</label>
-          <label><input type="radio" name="appsWindows" value="Windows Phone">Windows Phone</label>
+
+        <fieldset class="form-contest__fieldset form-contest__fieldset--bg">
+          <legend class="form-contest__check-title">
+            С каким приложением путешествовали?
+          </legend>
+          <ul class="form-contest__checklist wrapper">
+            <li>
+              <input class="visually-hidden form-contest__radio" type="radio" name="appsIOS" id="appsIOS" value="Pink для iOS" checked>
+              <label class="form-contest__check-label" for="appsIOS">
+                Pink для iOS
+              </label>
+            </li>
+            <li>
+              <input class="visually-hidden form-contest__radio" type="radio" name="appsAndroid" id="appsAndroid" value="Pink на Android">
+              <label class="form-contest__check-label" for="appsAndroid">
+                Pink на Android
+              </label>
+            </li>
+            <li>
+              <input class="visually-hidden form-contest__radio" type="radio" name="appsWindows" id="appsWindows" value="Windows Phone">
+              <label class="form-contest__check-label" for="appsWindows">
+                Windows Phone
+              </label>
+            </li>
+          </ul>
         </fieldset>
-        <fieldset>
-          <legend>Опишите свои эмоции</legend>
-          <textarea placeholder="Можно прям в красках, не стесняясь в выражениях" name="description"></textarea>
+
+        <fieldset class="form-contest__fieldset wrapper">
+          <legend class="form-contest__check-title form-contest__check-title--color-body">
+            Опишите свои эмоции
+          </legend>
+          <textarea class="form-contest__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях" name="description"></textarea>
         </fieldset>
-        <button type="submit">Отправить форму</button>
-        <p><span>*</span> &mdash; обязательные поля</p>
+
+        <button class="button-basic button-basic--margin" type="submit">Отправить форму</button>
+        <p class="form-contest__req-fields">
+          <span class="form-contest__footnote">*</span> &mdash; обязательные поля
+        </p>
       </form>
 
-      <div class="message modal" id="modal-send-error">
+      <div class="message message--modal" id="modal-send-error">
         <p class="message__header">Что-то пошло не так!</p>
         <p class="message__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="message__button" type="button" name="btnClose">Ok</button>
+        <button class="button-basic" type="button" name="btnClose">Ok</button>
       </div>
-      <div class="message modal" id="modal-send-ok">
+      <div class="message message--modal" id="modal-send-ok">
         <p class="message__header">Ваша заявка отправлена</p>
         <p class="message__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим её и оповестим вас.</p>
-        <button class="message__button" type="button" name="btnClose">Закрыть окно</button>
+        <button class="button-basic" type="button" name="btnClose">Закрыть окно</button>
       </div>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__logo">
-        <img class="contacts__map" src="logo-glasses.svg" alt="очки" width="59" height="40">
-        <img class="contacts__map" src="logo-black.svg" alt="чёрная надпись PINK" width="74" height="23">
+        <img src="img/logo-footer.svg" alt="логотип PINK с очками" width="145" height="40">
       </div>
       <ul class="page-footer__social">
-        <li>
-          <a class="page-footer__social-button" href="" aria-label="перейти в twitter">
+        <li class="page-footer__social-button">
+          <a href="" aria-label="перейти в twitter">
             <img src="img/twitter-icon.svg" alt="иконка twitter" width="18" height="14">
           </a>
         </li>
-        <li>
-          <a class="page-footer__social-button" href="" aria-label="перейти в facebook">
-            <img src="img/twitter-icon.svg" alt="иконка facebook" width="9" height="18">
+        <li class="page-footer__social-button">
+          <a href="" aria-label="перейти в facebook">
+            <img src="img/facebook-icon.svg" alt="иконка facebook" width="9" height="18">
           </a>
         </li>
-        <li>
-          <a class="page-footer__social-button" href="" aria-label="перейти в youtube">
+        <li class="page-footer__social-button">
+          <a href="" aria-label="перейти в youtube">
             <img src="img/youtube-icon.svg" alt="иконка youtube" width="16" height="13">
           </a>
         </li>
       </ul>
-      <div class="page-footer__developer">
-        <span>Разработано</span>
-        <a class="link-developer" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="переход на сайт разработчика сайта HTML Academy">
+      <div class="page-footer__developer-area">
+        <span class="page-footer__developer">Разработано</span>
+        <a class="link-developer" href="https://htmlacademy.ru/intensive/adaptive" aria-label="переход на сайт разработчика сайта HTML Academy">
           <img src="img/htmlacademy-icon.svg" width="27" height="34" alt="логотип HTML Academy">
         </a>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

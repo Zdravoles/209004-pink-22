@@ -1,3 +1,12 @@
+.page-footer {
+  margin-top: 26px;
+  padding-bottom: 40px;
+}
+
+.page-footer__logo {
+  margin-bottom: 36px;
+}
+
 .page-footer__social {
   list-style: none;
   padding: 0;
@@ -6,13 +15,27 @@
 }
 
 .page-footer__social-button {
-  width: 48px;
-  height: 48px;
-  background: @bg-white;
-  border: 3px solid @border-icon;
-  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  background: url("/img/ellipse.svg") no-repeat center;
+  margin-right: 8px;
 }
 
-.page-footer__developer span {
+.page-footer__social-button:last-child {
+  margin-right: 0;
+  margin-bottom: 38px;
+}
+
+.page-footer__developer-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-footer__developer {
   line-height: 18px;
+  margin-right: 15px;
 }
