@@ -1,4 +1,9 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__topline {
   width: @mobile-width;
   background-color: @bg-header;
   color: @text-light;
@@ -11,9 +16,14 @@
 }
 
 .page-header__menu-toggle {
-  background: url("/img/btn-menu.svg");
+  background: url("/img/btn-menu.svg") no-repeat;
   height: 24px;
   width: 50px;
   border: none;
   cursor: pointer;
+}
+
+.page-header__topline--open {
+  position: unset;
+  background-color: @text-dark;
 }
