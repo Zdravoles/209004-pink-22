@@ -1,0 +1,29 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__topline {
+  width: @mobile-width;
+  background-color: @bg-header;
+  color: @text-light;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__menu-toggle {
+  background: url("/img/btn-menu.svg") no-repeat;
+  height: 24px;
+  width: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.page-header__topline--open {
+  position: unset;
+  background-color: @text-dark;
+}
