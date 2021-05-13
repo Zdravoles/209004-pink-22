@@ -1,0 +1,80 @@
+.photo__item {
+  margin-bottom: 20px;
+}
+
+.photo__photo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.photo__image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.photo__label-panorama::before {
+  content: "Панорама дня";
+  width: 140px;
+  height: 36px;
+  text-transform: uppercase;
+  position: absolute;
+  background-color: @text-red;
+  color: @text-light;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: @mobile-padding;
+}
+
+.photo__info {
+  text-align: left;
+  background-color: @bg-checkarea;
+  margin: 0 @mobile-padding;
+  padding: 26px 10px 5px 17px;
+}
+
+.photo__autor {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.photo__time-update {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.photo__text {
+  line-height: 24px;
+  margin: 0;
+}
+
+.photo__button-like {
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: @text-red;
+  border: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  background-color: transparent;
+}
+
+.photo__button-like::before {
+  content: "";
+  width: 13px;
+  height: 12px;
+  background: url("/img/icon-like.svg") no-repeat;
+  position: absolute;
+  left: 0;
+}
