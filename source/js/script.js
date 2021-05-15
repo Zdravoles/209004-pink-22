@@ -6,11 +6,11 @@ btnMenu.onclick = function (event) {
   show_hide('main-nav');
   if (topLine.className.includes('--open')) {
     topLine.className='page-header__topline wrapper';
-    btnMenu.style.background='url("/img/btn-menu.svg") no-repeat';
+    btnMenu.style.background='url("../img/btn-menu.svg") no-repeat';
   }
   else {
     topLine.className=topLine.className+' page-header__topline--open';
-    btnMenu.style.background='url("/img/icon-menu-close.svg") no-repeat right';
+    btnMenu.style.background='url("../img/icon-menu-close.svg") no-repeat right';
   }
 };
 
