@@ -2,6 +2,16 @@
   background: url("../img/back-mobile.png") no-repeat top @bg-download;
   color: @text-light;
   padding-bottom: 14px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 130px;
+    margin-bottom: 77px;
+  }
 }
 
 .download__title {
@@ -9,6 +19,19 @@
   font-size: 24px;
   line-height: 120%;
   padding-top: 66px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+    padding-top: 150px;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
 }
 
 .download__link {
@@ -25,6 +48,13 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    font-size: 21px;
+    padding: 0;
+    margin-bottom: 67px;
+  }
 }
 
 .download__image-area {
@@ -32,9 +62,21 @@
   padding-top: 12px;
   margin-bottom: 28px;
   background-position: center 45px;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
 }
 
 .download__description {
   font-weight: 300;
   line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
