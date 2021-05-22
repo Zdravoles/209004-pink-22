@@ -1,9 +1,4 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
 
@@ -12,13 +7,13 @@
     flex-direction: row;
     flex-wrap: nowrap;
     position: absolute;
+    width: @desktop-width;
   }
 }
 
 .page-header__topline {
-  /*width: @mobile-width;
-  background-color: @bg-header;*/
-  width: 100%;
+  width: @mobile-width;
+  background-color: @bg-header;
   color: @text-light;
   padding-top: 21px;
   padding-bottom: 21px;
@@ -27,9 +22,12 @@
   box-sizing: border-box;
   position: absolute;
 
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+
   @media (min-width: @desktop-width) {
     position: relative;
-    width: unset;
   }
 }
 

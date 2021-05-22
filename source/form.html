@@ -37,20 +37,27 @@
         <h1 class="page-main__h1">Конкурс на самое безбашенное путешествие с Пинк</h1>
 
         <p class="page-main__intro-text wrapper">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <p class="page-main__intro-text wrapper">Пожалуйста, заполните форму ниже:</p>
       </section>
 
       <form class="form-contest" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form-contest__fieldset wrapper">
+        <fieldset class="form-contest__fieldset wrapper form-contest__fieldset--no-border form-contest__fio">
           <legend class="visually-hidden">ФИО</legend>
-          <label class="form-contest__label" for="lastName">Фамилия:</label>
-          <input class="form-contest__input-text" type="text" name="lastName" id="lastName" placeholder="Укажите фамилию *" required="required">
-          <label class="form-contest__label" for="firstName">Имя:</label>
-          <input class="form-contest__input-text" type="text" name="firstName" id="firstName" placeholder="Введите ваше имя *" required="required">
-          <label class="form-contest__label" for="middleName">Отчество:</label>
-          <input class="form-contest__input-text" type="text" name="middleName" id="middleName" placeholder="Ну и отчество тоже">
+          <div class="form-contest__row">
+            <label class="form-contest__label" for="lastName">Фамилия:</label>
+            <input class="form-contest__input-text" type="text" name="lastName" id="lastName" placeholder="Укажите фамилию *" required="required">
+          </div>
+          <div class="form-contest__row">
+            <label class="form-contest__label" for="firstName">Имя:</label>
+            <input class="form-contest__input-text" type="text" name="firstName" id="firstName" placeholder="Введите ваше имя *" required="required">
+          </div>
+          <div class="form-contest__row">
+            <label class="form-contest__label" for="middleName">Отчество:</label>
+            <input class="form-contest__input-text" type="text" name="middleName" id="middleName" placeholder="Ну и отчество тоже">
+          </div>
         </fieldset>
 
-        <fieldset class="form-contest__fieldset form-contest__fieldset--bg">
+        <fieldset class="form-contest__fieldset form-contest__fieldset--bg form-contest__achiev">
           <legend class="form-contest__check-title">
             Ваши безбашенные достижения в путешествии
           </legend>
@@ -94,7 +101,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form-contest__fieldset">
+        <fieldset class="form-contest__fieldset form-contest__contacts">
           <legend class="visually-hidden">Контактная информация</legend>
           <label class="form-contest__label" for="phone">Номер телефона</label>
           <input class="form-contest__input-text" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
@@ -102,7 +109,7 @@
           <input class="form-contest__input-text" type="email" name="email" id="email" placeholder="Введите почту *" required="required">
         </fieldset>
 
-        <fieldset class="form-contest__fieldset form-contest__fieldset--bg">
+        <fieldset class="form-contest__fieldset form-contest__fieldset--bg form-contest__apps">
           <legend class="form-contest__check-title">
             С каким приложением путешествовали?
           </legend>
@@ -128,7 +135,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form-contest__fieldset wrapper">
+        <fieldset class="form-contest__fieldset wrapper form-contest__emotion">
           <legend class="form-contest__check-title form-contest__check-title--color-body">
             Опишите свои эмоции
           </legend>
@@ -153,7 +160,7 @@
       </div>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer wrapper">
       <div class="page-footer__logo">
         <img src="img/logo-footer.svg" alt="логотип PINK с очками" width="145" height="40">
       </div>

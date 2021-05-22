@@ -1,6 +1,6 @@
 .price {
   background-color: @bg-price;
-  margin-top: 50px;
+  padding-top: 50px;
   padding-bottom: 50px;
   margin-bottom: 50px;
 }
@@ -8,6 +8,7 @@
 .price__table {
   border-collapse: collapse;
   margin: auto;
+  width: 94%;
 }
 
 .price__title {
@@ -32,14 +33,48 @@
   color: @text-dark;
   line-height: 30px;
   font-size: 14px;
-  text-transform: none;
+  text-transform: uppercase;
+  text-align: center;
+
+  &:first-child {
+    text-align: left;
+  }
+
+  &[data-status="no"] {
+    content: "";
+    width: 27px;
+    height: 27px;
+    background: url("../img/icon-no.svg") no-repeat center @text-light;
+  }
+
+  &[data-status="yes"] {
+    content: "";
+    width: 27px;
+    height: 27px;
+    background: url("../img/icon-yes.svg") no-repeat center @text-light;
+  }
+
+  @media (min-width: @tablet-width) {
+    text-transform: none;
+    padding: 15px;
+  }
 }
 
 .price__table th {
   background-color: @text-dark;
-  border: 2px solid @text-dark;
+  border-left: 2px solid @bg-page;
   border-radius: 1px 0 0 0;
   width: 25%;
+
+  &:first-child {
+    background: transparent;
+    border: none;
+  }
+
+  &:nth-child(2) {
+    border-left: none;
+    border-radius: 5px 0 0 0;
+  }
 }
 
 .price__table p {
